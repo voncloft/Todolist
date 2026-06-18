@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
     app.setApplicationName(QStringLiteral("Todo List"));
     app.setOrganizationName(QStringLiteral("von"));
     app.setDesktopFileName(QStringLiteral("com.von.TodoList"));
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("view-pim-tasks")));
+    const QIcon appIcon(QStringLiteral(":/todolist-icon.svg"));
+    app.setWindowIcon(appIcon.isNull() ? QIcon::fromTheme(QStringLiteral("com.von.TodoList")) : appIcon);
 
     QCommandLineParser parser;
     parser.setApplicationDescription(QStringLiteral("A simple Qt6 todo list window with dynamic checkboxes."));

@@ -69,13 +69,21 @@ include CMakeFiles/todolist.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/todolist.dir/flags.make
 
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/von/projects/Todolist/assets/resources.qrc
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp: CMakeFiles/todolist_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp: /home/von/projects/Todolist/assets/todolist-icon.svg
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp: /usr/libexec/rcc
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp: /usr/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for assets/resources.qrc"
+	/bin/cmake -E cmake_autorcc /home/von/projects/Todolist/build/CMakeFiles/todolist_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json 
+
 CMakeFiles/todolist.dir/codegen:
 .PHONY : CMakeFiles/todolist.dir/codegen
 
 CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o: CMakeFiles/todolist.dir/flags.make
 CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o: todolist_autogen/mocs_compilation.cpp
 CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o -MF CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o -c /home/von/projects/Todolist/build/todolist_autogen/mocs_compilation.cpp
 
 CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.i: cmake_force
@@ -89,7 +97,7 @@ CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/todolist.dir/src/EditableLabel.cpp.o: CMakeFiles/todolist.dir/flags.make
 CMakeFiles/todolist.dir/src/EditableLabel.cpp.o: /home/von/projects/Todolist/src/EditableLabel.cpp
 CMakeFiles/todolist.dir/src/EditableLabel.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/todolist.dir/src/EditableLabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/todolist.dir/src/EditableLabel.cpp.o"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/src/EditableLabel.cpp.o -MF CMakeFiles/todolist.dir/src/EditableLabel.cpp.o.d -o CMakeFiles/todolist.dir/src/EditableLabel.cpp.o -c /home/von/projects/Todolist/src/EditableLabel.cpp
 
 CMakeFiles/todolist.dir/src/EditableLabel.cpp.i: cmake_force
@@ -103,7 +111,7 @@ CMakeFiles/todolist.dir/src/EditableLabel.cpp.s: cmake_force
 CMakeFiles/todolist.dir/src/MainWindow.cpp.o: CMakeFiles/todolist.dir/flags.make
 CMakeFiles/todolist.dir/src/MainWindow.cpp.o: /home/von/projects/Todolist/src/MainWindow.cpp
 CMakeFiles/todolist.dir/src/MainWindow.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/todolist.dir/src/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/todolist.dir/src/MainWindow.cpp.o"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/src/MainWindow.cpp.o -MF CMakeFiles/todolist.dir/src/MainWindow.cpp.o.d -o CMakeFiles/todolist.dir/src/MainWindow.cpp.o -c /home/von/projects/Todolist/src/MainWindow.cpp
 
 CMakeFiles/todolist.dir/src/MainWindow.cpp.i: cmake_force
@@ -117,7 +125,7 @@ CMakeFiles/todolist.dir/src/MainWindow.cpp.s: cmake_force
 CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o: CMakeFiles/todolist.dir/flags.make
 CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o: /home/von/projects/Todolist/src/TodoItemWidget.cpp
 CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o -MF CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o.d -o CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o -c /home/von/projects/Todolist/src/TodoItemWidget.cpp
 
 CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.i: cmake_force
@@ -131,7 +139,7 @@ CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.s: cmake_force
 CMakeFiles/todolist.dir/src/main.cpp.o: CMakeFiles/todolist.dir/flags.make
 CMakeFiles/todolist.dir/src/main.cpp.o: /home/von/projects/Todolist/src/main.cpp
 CMakeFiles/todolist.dir/src/main.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/todolist.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/todolist.dir/src/main.cpp.o"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/src/main.cpp.o -MF CMakeFiles/todolist.dir/src/main.cpp.o.d -o CMakeFiles/todolist.dir/src/main.cpp.o -c /home/von/projects/Todolist/src/main.cpp
 
 CMakeFiles/todolist.dir/src/main.cpp.i: cmake_force
@@ -142,13 +150,28 @@ CMakeFiles/todolist.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/todolist.dir/src/main.cpp.s"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/von/projects/Todolist/src/main.cpp -o CMakeFiles/todolist.dir/src/main.cpp.s
 
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/todolist.dir/flags.make
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o: todolist_autogen/GBFAFXFCVO/qrc_resources.cpp
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o: CMakeFiles/todolist.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o -MF CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d -o CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o -c /home/von/projects/Todolist/build/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp
+
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/von/projects/Todolist/build/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp > CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/von/projects/Todolist/build/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp -o CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+
 # Object files for target todolist
 todolist_OBJECTS = \
 "CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/todolist.dir/src/EditableLabel.cpp.o" \
 "CMakeFiles/todolist.dir/src/MainWindow.cpp.o" \
 "CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o" \
-"CMakeFiles/todolist.dir/src/main.cpp.o"
+"CMakeFiles/todolist.dir/src/main.cpp.o" \
+"CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
 
 # External object files for target todolist
 todolist_EXTERNAL_OBJECTS =
@@ -158,6 +181,7 @@ todolist: CMakeFiles/todolist.dir/src/EditableLabel.cpp.o
 todolist: CMakeFiles/todolist.dir/src/MainWindow.cpp.o
 todolist: CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o
 todolist: CMakeFiles/todolist.dir/src/main.cpp.o
+todolist: CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o
 todolist: CMakeFiles/todolist.dir/build.make
 todolist: CMakeFiles/todolist.dir/compiler_depend.ts
 todolist: /usr/lib/libQt6Widgets.so.6.9.1
@@ -166,7 +190,7 @@ todolist: /usr/lib64/libGLX.so
 todolist: /usr/lib64/libOpenGL.so
 todolist: /usr/lib/libQt6Core.so.6.9.1
 todolist: CMakeFiles/todolist.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable todolist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable todolist"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/todolist.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -177,7 +201,7 @@ CMakeFiles/todolist.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/todolist.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/todolist.dir/clean
 
-CMakeFiles/todolist.dir/depend:
+CMakeFiles/todolist.dir/depend: todolist_autogen/GBFAFXFCVO/qrc_resources.cpp
 	cd /home/von/projects/Todolist/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/von/projects/Todolist /home/von/projects/Todolist /home/von/projects/Todolist/build /home/von/projects/Todolist/build /home/von/projects/Todolist/build/CMakeFiles/todolist.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/todolist.dir/depend
 

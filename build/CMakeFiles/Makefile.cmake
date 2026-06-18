@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/von/projects/Todolist/CMakeLists.txt"
+  "/home/von/projects/Todolist/assets/resources.qrc"
   "CMakeFiles/4.0.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.3/CMakeSystem.cmake"
   "/lib/cmake/Qt6/Qt6Config.cmake"
@@ -363,6 +364,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/todolist_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/todolist_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Info.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

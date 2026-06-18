@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/home/von/projects/Todolist/build/todolist_autogen",
+	"CMAKE_BINARY_DIR" : "/home/von/projects/Todolist/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/von/projects/Todolist/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/von/projects/Todolist",
+	"CMAKE_SOURCE_DIR" : "/home/von/projects/Todolist",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/von/projects/Todolist/build/todolist_autogen/include",
+	"INPUTS" : [ "/home/von/projects/Todolist/assets/todolist-icon.svg" ],
+	"LOCK_FILE" : "/home/von/projects/Todolist/build/CMakeFiles/todolist_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "GBFAFXFCVO",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/von/projects/Todolist/build/CMakeFiles/todolist_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Used.txt",
+	"SOURCE" : "/home/von/projects/Todolist/assets/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

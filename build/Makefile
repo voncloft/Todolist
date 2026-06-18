@@ -251,6 +251,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+todolist_autogen/GBFAFXFCVO/qrc_resources.o: todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.o
+
+# target to build an object file
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o
+
+todolist_autogen/GBFAFXFCVO/qrc_resources.i: todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.i
+
+# target to preprocess a source file
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.i
+
+todolist_autogen/GBFAFXFCVO/qrc_resources.s: todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.s
+
+# target to generate assembly for a file
+todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+.PHONY : todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.s
+
 todolist_autogen/mocs_compilation.o: todolist_autogen/mocs_compilation.cpp.o
 .PHONY : todolist_autogen/mocs_compilation.o
 
@@ -298,6 +322,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... todolist_autogen/GBFAFXFCVO/qrc_resources.o"
+	@echo "... todolist_autogen/GBFAFXFCVO/qrc_resources.i"
+	@echo "... todolist_autogen/GBFAFXFCVO/qrc_resources.s"
 	@echo "... todolist_autogen/mocs_compilation.o"
 	@echo "... todolist_autogen/mocs_compilation.i"
 	@echo "... todolist_autogen/mocs_compilation.s"

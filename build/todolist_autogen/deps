@@ -1,5 +1,6 @@
 todolist_autogen/timestamp: \
 	/home/von/projects/Todolist/CMakeLists.txt \
+	/home/von/projects/Todolist/assets/resources.qrc \
 	/home/von/projects/Todolist/build/CMakeFiles/4.0.3/CMakeCXXCompiler.cmake \
 	/home/von/projects/Todolist/build/CMakeFiles/4.0.3/CMakeSystem.cmake \
 	/home/von/projects/Todolist/build/todolist_autogen/moc_predefs.h \

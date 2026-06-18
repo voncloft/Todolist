@@ -7,6 +7,7 @@ todolist: \
   CMakeFiles/todolist.dir/src/MainWindow.cpp.o \
   CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o \
   CMakeFiles/todolist.dir/src/main.cpp.o \
+  CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o \
   /usr/lib/libQt6Widgets.so.6.9.1 \
   /usr/lib/libQt6Gui.so.6.9.1 \
   /usr/lib64/libGLX.so \
@@ -106,6 +107,8 @@ CMakeFiles/todolist.dir/src/MainWindow.cpp.o:
 CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o:
 
 CMakeFiles/todolist.dir/src/main.cpp.o:
+
+CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o:
 
 /usr/lib/libQt6Widgets.so.6.9.1:
 

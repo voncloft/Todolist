@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/von/projects/Todolist/src/MainWindow.cpp" "CMakeFiles/todolist.dir/src/MainWindow.cpp.o" "gcc" "CMakeFiles/todolist.dir/src/MainWindow.cpp.o.d"
   "/home/von/projects/Todolist/src/TodoItemWidget.cpp" "CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o" "gcc" "CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o.d"
   "/home/von/projects/Todolist/src/main.cpp" "CMakeFiles/todolist.dir/src/main.cpp.o" "gcc" "CMakeFiles/todolist.dir/src/main.cpp.o.d"
+  "/home/von/projects/Todolist/build/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp" "CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o" "gcc" "CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d"
   "/home/von/projects/Todolist/build/todolist_autogen/mocs_compilation.cpp" "CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o.d"
   "" "todolist" "gcc" "CMakeFiles/todolist.dir/link.d"
   )

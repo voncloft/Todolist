@@ -23,6 +23,7 @@
 ## Project Layout
 
 - `src/` contains the Qt6 application.
+- `assets/` contains the app SVG icon and Qt resource file.
 - `scripts/run-todolist.sh` runs the built binary from the project root.
 - `scripts/install-context-menu.sh` installs the local launcher, KDE service-menu entry, and a Plasma desktop override that adds the action to the desktop `Create New` submenu.
 - `packaging/` contains the `.desktop` templates used by the install script.
@@ -59,6 +60,7 @@ That script installs:
 - `~/.local/bin/todolist-launcher`
 - `~/.local/share/applications/com.von.TodoList.desktop`
 - `~/.local/share/kio/servicemenus/create-todo-list.desktop`
+- `~/.local/share/icons/hicolor/scalable/apps/com.von.TodoList.svg`
 - `~/.local/share/plasma/plasmoids/org.kde.desktopcontainment`
 
 It also:

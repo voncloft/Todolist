@@ -460,7 +460,8 @@
 		"/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
 		"/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"/usr/share/cmake-4.0/Modules/GNUInstallDirs.cmake"
+		"/usr/share/cmake-4.0/Modules/GNUInstallDirs.cmake",
+		"/home/von/projects/Todolist/assets/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/von/projects/Todolist",
 	"CROSS_CONFIG" : false,

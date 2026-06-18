@@ -84,16 +84,16 @@ clean: CMakeFiles/todolist_autogen.dir/clean
 # Target rules for target CMakeFiles/todolist.dir
 
 # All Build rule for target.
-CMakeFiles/todolist.dir/all: CMakeFiles/todolist_autogen.dir/all
 CMakeFiles/todolist.dir/all: CMakeFiles/todolist_autogen_timestamp_deps.dir/all
+CMakeFiles/todolist.dir/all: CMakeFiles/todolist_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target todolist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target todolist"
 .PHONY : CMakeFiles/todolist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/todolist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/von/projects/Todolist/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/von/projects/Todolist/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/todolist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/von/projects/Todolist/build/CMakeFiles 0
 .PHONY : CMakeFiles/todolist.dir/rule
@@ -105,7 +105,7 @@ todolist: CMakeFiles/todolist.dir/rule
 # codegen rule for target.
 CMakeFiles/todolist.dir/codegen: CMakeFiles/todolist_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist.dir/build.make CMakeFiles/todolist.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target todolist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target todolist"
 .PHONY : CMakeFiles/todolist.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/todolist_autogen_timestamp_deps.dir/clean:
 CMakeFiles/todolist_autogen.dir/all: CMakeFiles/todolist_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist_autogen.dir/build.make CMakeFiles/todolist_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist_autogen.dir/build.make CMakeFiles/todolist_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=7 "Built target todolist_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=9 "Built target todolist_autogen"
 .PHONY : CMakeFiles/todolist_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ todolist_autogen: CMakeFiles/todolist_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/todolist_autogen.dir/codegen: CMakeFiles/todolist_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/todolist_autogen.dir/build.make CMakeFiles/todolist_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=7 "Finished codegen for target todolist_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/von/projects/Todolist/build/CMakeFiles --progress-num=9 "Finished codegen for target todolist_autogen"
 .PHONY : CMakeFiles/todolist_autogen.dir/codegen
 
 # clean rule for target.

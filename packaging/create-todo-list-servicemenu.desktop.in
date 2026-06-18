@@ -3,7 +3,7 @@ Type=Service
 Name=Create Todo List
 MimeType=inode/directory;
 Actions=createTodoList;
-Icon=view-pim-tasks
+Icon=com.von.TodoList
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 X-KDE-MinNumberOfUrls=0
 X-KDE-MaxNumberOfUrls=1
@@ -12,5 +12,5 @@ X-KDE-Protocols=file
 
 [Desktop Action createTodoList]
 Name=Create Todo List
-Icon=view-pim-tasks
+Icon=com.von.TodoList
 Exec=@LAUNCHER@ %u

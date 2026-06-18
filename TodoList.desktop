@@ -2,7 +2,7 @@
 Type=Application
 Name=Todo List
 Comment=Qt6 todo list with dynamic checkboxes
-Exec=@LAUNCHER@ %u
+Exec=/home/von/.local/bin/todolist-launcher %u
 Icon=com.von.TodoList
 Terminal=false
 Categories=Utility;Qt;

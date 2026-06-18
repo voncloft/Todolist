@@ -11,10 +11,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/todolist.dir/src/TodoItemWidget.cpp.o.d"
   "CMakeFiles/todolist.dir/src/main.cpp.o"
   "CMakeFiles/todolist.dir/src/main.cpp.o.d"
+  "CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o"
+  "CMakeFiles/todolist.dir/todolist_autogen/GBFAFXFCVO/qrc_resources.cpp.o.d"
   "CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/todolist.dir/todolist_autogen/mocs_compilation.cpp.o.d"
   "todolist"
   "todolist.pdb"
+  "todolist_autogen/GBFAFXFCVO/qrc_resources.cpp"
 )
 
 # Per-language clean rules from dependency scanning.
