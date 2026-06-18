@@ -1,0 +1,5 @@
+/home/von/projects/Todolist/build/CMakeFiles/todolist.dir
+/home/von/projects/Todolist/build/CMakeFiles/edit_cache.dir
+/home/von/projects/Todolist/build/CMakeFiles/rebuild_cache.dir
+/home/von/projects/Todolist/build/CMakeFiles/todolist_autogen_timestamp_deps.dir
+/home/von/projects/Todolist/build/CMakeFiles/todolist_autogen.dir
