@@ -395,7 +395,8 @@ CMakeFiles/todolist.dir/src/MainWindow.cpp.o: \
  /usr/include/QtWidgets/qlayout.h /usr/include/QtWidgets/qlayoutitem.h \
  /usr/include/QtWidgets/qboxlayout.h /usr/include/QtWidgets/qlayout.h \
  /usr/include/QtWidgets/qgridlayout.h /usr/include/QtWidgets/QFrame \
- /usr/include/QtWidgets/qframe.h /usr/include/QtWidgets/QHBoxLayout \
+ /usr/include/QtWidgets/qframe.h /usr/include/QtGui/QGuiApplication \
+ /usr/include/QtGui/qguiapplication.h /usr/include/QtWidgets/QHBoxLayout \
  /usr/include/QtWidgets/qboxlayout.h /usr/include/QtCore/QJsonArray \
  /usr/include/QtCore/qjsonarray.h /usr/include/QtCore/qjsonvalue.h \
  /usr/include/QtCore/qcborvalue.h /usr/include/QtCore/qcborcommon.h \
@@ -408,15 +409,18 @@ CMakeFiles/todolist.dir/src/MainWindow.cpp.o: \
  /usr/include/QtWidgets/QMessageBox /usr/include/QtWidgets/qmessagebox.h \
  /usr/include/QtWidgets/qdialogbuttonbox.h \
  /usr/include/QtWidgets/QPushButton /usr/include/QtWidgets/qpushbutton.h \
- /usr/include/QtWidgets/qabstractbutton.h \
- /usr/include/QtCore/QRegularExpression \
+ /usr/include/QtWidgets/qabstractbutton.h /usr/include/QtGui/QScreen \
+ /usr/include/QtGui/qscreen.h /usr/include/QtCore/QRegularExpression \
  /usr/include/QtCore/qregularexpression.h \
  /usr/include/QtWidgets/QScrollArea /usr/include/QtWidgets/qscrollarea.h \
  /usr/include/QtWidgets/qabstractscrollarea.h \
- /usr/include/QtCore/QSettings /usr/include/QtCore/qsettings.h \
- /usr/include/QtCore/QSignalBlocker /usr/include/QtCore/QStandardPaths \
+ /usr/include/QtWidgets/QScrollBar /usr/include/QtWidgets/qscrollbar.h \
+ /usr/include/QtWidgets/qabstractslider.h /usr/include/QtCore/QSettings \
+ /usr/include/QtCore/qsettings.h /usr/include/QtCore/QSignalBlocker \
+ /usr/include/QtGui/QShowEvent /usr/include/QtCore/QStandardPaths \
  /usr/include/QtCore/qstandardpaths.h /usr/include/QtWidgets/QStatusBar \
- /usr/include/QtWidgets/qstatusbar.h /usr/include/QtCore/QUrl \
+ /usr/include/QtWidgets/qstatusbar.h /usr/include/QtCore/QTimer \
+ /usr/include/QtCore/qtimer.h /usr/include/QtCore/QUrl \
  /usr/include/QtCore/qurl.h /usr/include/QtWidgets/QVBoxLayout \
  /usr/include/QtGui/QResizeEvent /usr/include/QtCore/QtMath \
  /usr/include/QtCore/qmath.h

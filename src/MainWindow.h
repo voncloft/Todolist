@@ -7,6 +7,8 @@
 
 class QResizeEvent;
 class QJsonObject;
+class QScrollArea;
+class QShowEvent;
 class QVBoxLayout;
 class EditableLabel;
 class QFrame;
@@ -25,6 +27,7 @@ public:
 protected:
     void closeEvent(QCloseEvent *event) override;
     void resizeEvent(QResizeEvent *event) override;
+    void showEvent(QShowEvent *event) override;
 
 private:
     struct NoteTheme
@@ -44,6 +47,7 @@ private:
     void setupMenus();
     void applyScale();
     void applyTheme();
+    void resizeWindowToFitItems();
     void openFormatDialog();
     void loadDefaultTheme();
     void saveCurrentThemeAsDefault() const;
@@ -78,6 +82,7 @@ private:
     QPushButton *m_addButton;
     QPushButton *m_formatButton;
     EditableLabel *m_titleLabel;
+    QScrollArea *m_itemsScrollArea;
     QWidget *m_itemsWidget;
     QVBoxLayout *m_noteLayout;
     QVBoxLayout *m_itemsLayout;
@@ -87,4 +92,5 @@ private:
     QString m_currentFile;
     QString m_suggestedDirectory;
     bool m_dirty = false;
+    bool m_pendingResizeToFitItems = false;
 };

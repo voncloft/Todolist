@@ -3,6 +3,7 @@
 
 todolist_autogen/timestamp: /bin/cmake \
   /home/von/projects/Todolist/CMakeLists.txt \
+  /home/von/projects/Todolist/assets/resources.qrc \
   CMakeFiles/4.0.3/CMakeCXXCompiler.cmake \
   CMakeFiles/4.0.3/CMakeSystem.cmake \
   todolist_autogen/moc_predefs.h \
@@ -1355,6 +1356,8 @@ todolist_autogen/timestamp: /bin/cmake \
 
 /lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake:
 
+/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-release.cmake:
+
 /lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake:
 
 /usr/include/QtCore/qfunctionaltools_impl.h:
@@ -1469,11 +1472,7 @@ todolist_autogen/timestamp: /bin/cmake \
 
 /lib/cmake/Qt6Gui/Qt6QEvdevTabletPluginAdditionalTargetInfo.cmake:
 
-/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake:
-
-/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake:
-
-CMakeFiles/4.0.3/CMakeCXXCompiler.cmake:
+/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-release.cmake:
 
 /lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
@@ -1509,14 +1508,6 @@ CMakeFiles/4.0.3/CMakeCXXCompiler.cmake:
 
 /lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake:
 
-/home/von/projects/Todolist/src/MainWindow.h:
-
-/usr/include/bits/wordsize.h:
-
-/lib/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake:
-
-/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-release.cmake:
-
 /lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
 
 /lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake:
@@ -1527,17 +1518,35 @@ CMakeFiles/4.0.3/CMakeCXXCompiler.cmake:
 
 /usr/include/bits/types/__fpos64_t.h:
 
+/usr/include/bits/types/__FILE.h:
+
+CMakeFiles/4.0.3/CMakeCXXCompiler.cmake:
+
+/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake:
+
 /usr/include/c++/15.1.0/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake:
 
 /lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake:
 
-/home/von/projects/Todolist/src/main.cpp:
-
 /usr/include/QtCore/qprocessordetection.h:
 
-/usr/include/bits/types/__FILE.h:
+/home/von/projects/Todolist/src/main.cpp:
+
+/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake:
+
+/home/von/projects/Todolist/src/MainWindow.h:
+
+/usr/include/bits/wordsize.h:
+
+/lib/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake:
+
+/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-release.cmake:
+
+/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
+
+/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
 /home/von/projects/Todolist/src/EditableLabel.cpp:
 
@@ -1643,12 +1652,6 @@ todolist_autogen/moc_predefs.h:
 
 /usr/include/QtCore/qiterable.h:
 
-/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
-
-/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
-
-/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-release.cmake:
-
 /usr/include/bits/types/struct_tm.h:
 
 /lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
@@ -1685,6 +1688,10 @@ todolist_autogen/moc_predefs.h:
 
 /lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
+/usr/include/c++/15.1.0/bits/basic_string.tcc:
+
+/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake:
+
 /lib/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-release.cmake:
 
 /lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
@@ -1697,8 +1704,6 @@ todolist_autogen/moc_predefs.h:
 
 /usr/include/asm/posix_types_64.h:
 
-/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-release.cmake:
-
 /lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
 
 /lib/cmake/Qt6Gui/Qt6GuiTargets-release.cmake:
@@ -1708,10 +1713,6 @@ todolist_autogen/moc_predefs.h:
 /lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
 
 /usr/include/QtCore/qtcoreglobal.h:
-
-/usr/include/c++/15.1.0/bits/exception.h:
-
-/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
@@ -1854,6 +1855,10 @@ todolist_autogen/moc_predefs.h:
 /usr/include/c++/15.1.0/cstring:
 
 /usr/include/QtCore/qtextstream.h:
+
+/usr/include/c++/15.1.0/bits/exception.h:
+
+/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
 
 /lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
 
@@ -2283,6 +2288,8 @@ todolist_autogen/moc_predefs.h:
 
 /usr/share/cmake-4.0/Modules/MacroAddFileDependencies.cmake:
 
+/home/von/projects/Todolist/assets/resources.qrc:
+
 /usr/include/asm/errno.h:
 
 /lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-release.cmake:
@@ -2392,7 +2399,3 @@ todolist_autogen/moc_predefs.h:
 /usr/include/c++/15.1.0/bits/allocator.h:
 
 /usr/include/c++/15.1.0/bits/atomic_base.h:
-
-/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake:
-
-/usr/include/c++/15.1.0/bits/basic_string.tcc:

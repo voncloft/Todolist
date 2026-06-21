@@ -14,6 +14,7 @@
 #include <QFileInfo>
 #include <QFormLayout>
 #include <QFrame>
+#include <QGuiApplication>
 #include <QHBoxLayout>
 #include <QJsonArray>
 #include <QJsonDocument>
@@ -22,12 +23,16 @@
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QPushButton>
+#include <QScreen>
 #include <QRegularExpression>
 #include <QScrollArea>
+#include <QScrollBar>
 #include <QSettings>
 #include <QSignalBlocker>
+#include <QShowEvent>
 #include <QStandardPaths>
 #include <QStatusBar>
+#include <QTimer>
 #include <QUrl>
 #include <QVBoxLayout>
 #include <QResizeEvent>
@@ -89,6 +94,14 @@ QString cssColor(const QColor &color)
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
+    , m_noteFrame(nullptr)
+    , m_addButton(nullptr)
+    , m_formatButton(nullptr)
+    , m_titleLabel(nullptr)
+    , m_itemsScrollArea(nullptr)
+    , m_itemsWidget(nullptr)
+    , m_noteLayout(nullptr)
+    , m_itemsLayout(nullptr)
 {
     setupUi();
     setupMenus();
@@ -128,12 +141,26 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 {
     QMainWindow::resizeEvent(event);
     applyScale();
+
+    if (m_pendingResizeToFitItems) {
+        QTimer::singleShot(0, this, &MainWindow::resizeWindowToFitItems);
+    }
+}
+
+void MainWindow::showEvent(QShowEvent *event)
+{
+    QMainWindow::showEvent(event);
+
+    if (m_pendingResizeToFitItems) {
+        QTimer::singleShot(0, this, &MainWindow::resizeWindowToFitItems);
+    }
 }
 
 void MainWindow::setupUi()
 {
-    resize(560, 680);
-    setMinimumSize(460, 560);
+    resize(560, 460);
+    setMinimumWidth(460);
+    setMinimumHeight(220);
 
     auto *central = new QWidget(this);
     central->setObjectName(QStringLiteral("deskSurface"));
@@ -156,20 +183,23 @@ void MainWindow::setupUi()
     m_titleLabel->setEditFieldLabel(tr("List title:"));
     m_titleLabel->setToolTip(tr("Double-click to edit the title"));
 
-    auto *scrollArea = new QScrollArea(m_noteFrame);
-    scrollArea->setObjectName(QStringLiteral("itemsScrollArea"));
-    scrollArea->setWidgetResizable(true);
-    scrollArea->setFrameShape(QFrame::NoFrame);
-    scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    m_itemsScrollArea = new QScrollArea(m_noteFrame);
+    m_itemsScrollArea->setObjectName(QStringLiteral("itemsScrollArea"));
+    m_itemsScrollArea->setWidgetResizable(true);
+    m_itemsScrollArea->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+    m_itemsScrollArea->setFrameShape(QFrame::NoFrame);
+    m_itemsScrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    m_itemsScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
 
-    m_itemsWidget = new QWidget(scrollArea);
+    m_itemsWidget = new QWidget(m_itemsScrollArea);
     m_itemsWidget->setObjectName(QStringLiteral("itemsContainer"));
+    m_itemsWidget->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
     m_itemsLayout = new QVBoxLayout(m_itemsWidget);
     m_itemsLayout->setContentsMargins(0, 4, 0, 4);
     m_itemsLayout->setSpacing(10);
     m_itemsLayout->addStretch();
 
-    scrollArea->setWidget(m_itemsWidget);
+    m_itemsScrollArea->setWidget(m_itemsWidget);
 
     auto *footerLayout = new QHBoxLayout();
     footerLayout->setContentsMargins(0, 0, 0, 0);
@@ -187,7 +217,7 @@ void MainWindow::setupUi()
     footerLayout->addWidget(m_addButton);
 
     m_noteLayout->addWidget(m_titleLabel);
-    m_noteLayout->addWidget(scrollArea, 1);
+    m_noteLayout->addWidget(m_itemsScrollArea, 1);
     m_noteLayout->addLayout(footerLayout);
 
     rootLayout->addWidget(m_noteFrame, 1);
@@ -291,6 +321,59 @@ void MainWindow::applyScale()
     for (TodoItemWidget *item : m_items) {
         item->setScaleFactor(scale);
     }
+}
+
+void MainWindow::resizeWindowToFitItems()
+{
+    if (!centralWidget() || !m_itemsScrollArea || !m_itemsLayout || m_items.isEmpty()) {
+        return;
+    }
+
+    if (!isVisible()) {
+        m_pendingResizeToFitItems = true;
+        return;
+    }
+
+    ensurePolished();
+    if (auto *layout = centralWidget()->layout()) {
+        layout->activate();
+    }
+    m_noteLayout->activate();
+    m_itemsLayout->activate();
+
+    const int contentHeight = qMax(m_itemsWidget->minimumSizeHint().height(),
+                                   m_itemsWidget->sizeHint().height());
+    const int viewportHeight = m_itemsScrollArea->viewport()->height();
+    if (contentHeight <= 0 || viewportHeight <= 0) {
+        m_pendingResizeToFitItems = true;
+        return;
+    }
+
+    int targetHeight = height() + contentHeight - viewportHeight;
+    targetHeight = qMax(minimumHeight(), targetHeight);
+    int maxHeight = targetHeight;
+
+    if (QScreen *windowScreen = screen() ? screen() : QGuiApplication::primaryScreen()) {
+        const QRect availableGeometry = windowScreen->availableGeometry();
+        maxHeight = isVisible()
+            ? qMax(minimumHeight(), availableGeometry.bottom() - frameGeometry().top() + 1)
+            : availableGeometry.height();
+        targetHeight = qMin(targetHeight, maxHeight);
+    }
+
+    if (targetHeight != height()) {
+        m_pendingResizeToFitItems = true;
+        resize(width(), targetHeight);
+        return;
+    }
+
+    if (m_itemsScrollArea->verticalScrollBar()->maximum() > 0 && height() < maxHeight) {
+        m_pendingResizeToFitItems = true;
+        QTimer::singleShot(0, this, &MainWindow::resizeWindowToFitItems);
+        return;
+    }
+
+    m_pendingResizeToFitItems = false;
 }
 
 void MainWindow::applyTheme()
@@ -830,6 +913,8 @@ bool MainWindow::loadFromFile(const QString &path)
     m_suggestedDirectory = QFileInfo(path).absolutePath();
     setDirty(false);
     updateStatusMessage(tr("Opened %1").arg(m_currentFile));
+    m_pendingResizeToFitItems = true;
+    QTimer::singleShot(0, this, &MainWindow::resizeWindowToFitItems);
     return true;
 }
 
